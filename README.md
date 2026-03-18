@@ -113,7 +113,6 @@ This site can be deployed for free on:
 | 📧 Email | adarshagrahari9838@gmail.com |
 | 💼 LinkedIn | [Adarsh Agrahari](https://www.linkedin.com/in/adarsh-agrahari) |
 | 🐙 GitHub | [Adarsh-dev-04](https://github.com/Adarsh-dev-04) |
-| 📞 Phone | +91-9919171630 |
 
 ---
 
