@@ -2,9 +2,9 @@
 
 > Personal portfolio website showcasing projects, skills, and experience. Built with HTML, CSS, and JavaScript featuring dark/light mode, smooth scroll animations, and a fully responsive design.
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-0057FF?style=for-the-badge&logo=vercel&logoColor=white)](https://your-live-link.vercel.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-0057FF?style=for-the-badge&logo=vercel&logoColor=white)](https://adarsh-portfolio-gamma-rose.vercel.app/)
 [![GitHub](https://img.shields.io/badge/GitHub-Adarsh--dev--04-181717?style=for-the-badge&logo=github)](https://github.com/Adarsh-dev-04)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adarsh%20Agrahari-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/adarsh-agrahari)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Adarsh%20Agrahari-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/adarsh-agrahari-366727234/)
 
 ---
 
