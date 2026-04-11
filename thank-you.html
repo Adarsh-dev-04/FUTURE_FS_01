@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Message Sent | Adarsh Agrahari</title>
+    <meta
+      name="description"
+      content="Thanks for reaching out to Adarsh Agrahari. Your message has been sent."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=Cabinet+Grotesk:wght@400;500;700;800&family=DM+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --blue: #0057ff;
+        --blue-light: #3d7eff;
+        --blue-pale: #e8f0ff;
+        --black: #0a0a0f;
+        --grey: #6b6b7b;
+        --white: #ffffff;
+        --border: #e2e2ec;
+        --font-display: "Cormorant Garamond", serif;
+        --font-body: "Cabinet Grotesk", sans-serif;
+        --font-mono: "DM Mono", monospace;
+      }
+
+      * { box-sizing: border-box; }
+      html, body { margin: 0; min-height: 100%; }
+      body {
+        font-family: var(--font-body);
+        color: var(--black);
+        background:
+          radial-gradient(circle at top left, rgba(0, 87, 255, 0.12), transparent 35%),
+          linear-gradient(180deg, #ffffff 0%, #f7f9ff 100%);
+        display: grid;
+        place-items: center;
+        padding: 2rem;
+      }
+      .card {
+        width: min(680px, 100%);
+        background: rgba(255, 255, 255, 0.88);
+        border: 1px solid var(--border);
+        border-radius: 28px;
+        padding: clamp(2rem, 6vw, 4rem);
+        box-shadow: 0 24px 80px rgba(0, 87, 255, 0.08);
+        backdrop-filter: blur(18px);
+      }
+      .eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--blue);
+        margin-bottom: 1.2rem;
+      }
+      .eyebrow::before {
+        content: "";
+        width: 28px;
+        height: 1.5px;
+        background: var(--blue);
+      }
+      h1 {
+        font-family: var(--font-display);
+        font-size: clamp(2.8rem, 7vw, 5rem);
+        line-height: 0.95;
+        margin: 0 0 1rem;
+      }
+      p {
+        color: var(--grey);
+        font-size: 1.05rem;
+        line-height: 1.75;
+        margin: 0 0 1.5rem;
+      }
+      .actions {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+      }
+      a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        border-radius: 999px;
+        padding: 0.9rem 1.4rem;
+        font-weight: 700;
+        transition: transform 0.2s ease, background 0.2s ease, color 0.2s ease;
+      }
+      .primary {
+        background: var(--blue);
+        color: #fff;
+      }
+      .primary:hover { background: var(--blue-light); transform: translateY(-2px); }
+      .secondary {
+        border: 1px solid var(--border);
+        color: var(--black);
+        background: #fff;
+      }
+      .secondary:hover { transform: translateY(-2px); }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="eyebrow">Contact Form</div>
+      <h1>Message sent.</h1>
+      <p>
+        Thanks for reaching out. If the email service is active, your message has been delivered to my inbox.
+        If you are still testing locally, check spam and confirm the service email from FormSubmit.
+      </p>
+      <div class="actions">
+        <a class="primary" href="index.html#contact">Back to portfolio</a>
+        <a class="secondary" href="mailto:adarshagrahari9838@gmail.com">Email directly</a>
+      </div>
+    </main>
+  </body>
+</html>

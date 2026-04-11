@@ -58,68 +58,24 @@ document.querySelectorAll(".reveal").forEach(function(el) {
 
 // ── Contact Form ──
 var contactForm = document.getElementById("contactForm");
-var submitBtn = document.getElementById("submitBtn");
-var formSuccess = document.getElementById("formSuccess");
 
-if (contactForm && submitBtn && formSuccess) {
+if (contactForm) {
   contactForm.addEventListener("submit", function(e) {
-    e.preventDefault();
-
     var name = document.getElementById("fname").value.trim();
     var email = document.getElementById("femail").value.trim();
     var msg = document.getElementById("fmessage").value.trim();
 
     if (!name || !email || !msg) {
+      e.preventDefault();
       alert("Please fill in Name, Email and Message.");
       return;
     }
 
     var emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
     if (!emailOk) {
+      e.preventDefault();
       alert("Please enter a valid email address.");
       return;
     }
-
-    submitBtn.disabled = true;
-    submitBtn.textContent = "Sending...";
-
-    fetch(contactForm.action, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Accept: "application/json"
-      },
-      body: JSON.stringify({
-        firstName: document.getElementById("fname").value.trim(),
-        lastName: document.getElementById("lname").value.trim(),
-        email: email,
-        subject: document.getElementById("fsubject").value.trim(),
-        message: msg
-      })
-    })
-      .then(function(res) {
-        if (!res.ok) {
-          throw new Error("Network response was not ok");
-        }
-        return res.json();
-      })
-      .then(function() {
-        formSuccess.textContent = "Message sent! I'll get back to you within 24 hours.";
-        formSuccess.style.display = "block";
-        contactForm.reset();
-      })
-      .catch(function() {
-        formSuccess.textContent = "Could not send right now. Please try again in a minute.";
-        formSuccess.style.display = "block";
-      })
-      .finally(function() {
-        submitBtn.disabled = false;
-        submitBtn.innerHTML =
-          'Send Message <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"></line><polygon points="22 2 15 22 11 13 2 9 22 2"></polygon></svg>';
-
-        setTimeout(function() {
-          formSuccess.style.display = "none";
-        }, 5000);
-      });
   });
 }
