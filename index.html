@@ -473,15 +473,23 @@
             </div>
           </div>
           <div class="reveal" style="transition-delay: 0.15s">
-            <div class="contact-form">
+            <form
+              class="contact-form"
+              id="contactForm"
+              action="https://formsubmit.co/ajax/adarshagrahari9838@gmail.com"
+              method="POST"
+            >
+              <input type="hidden" name="_subject" value="New Portfolio Contact Message" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_captcha" value="false" />
               <div class="form-row">
                 <div class="form-group">
                   <label for="fname">First Name</label
-                  ><input type="text" id="fname" placeholder="John" />
+                  ><input type="text" id="fname" name="firstName" placeholder="John" required />
                 </div>
                 <div class="form-group">
                   <label for="lname">Last Name</label
-                  ><input type="text" id="lname" placeholder="Doe" />
+                  ><input type="text" id="lname" name="lastName" placeholder="Doe" />
                 </div>
               </div>
               <div class="form-group">
@@ -489,7 +497,9 @@
                 ><input
                   type="email"
                   id="femail"
+                  name="email"
                   placeholder="john@example.com"
+                  required
                 />
               </div>
               <div class="form-group">
@@ -497,6 +507,7 @@
                 ><input
                   type="text"
                   id="fsubject"
+                  name="subject"
                   placeholder="Internship opportunity..."
                 />
               </div>
@@ -504,10 +515,12 @@
                 <label for="fmessage">Message</label
                 ><textarea
                   id="fmessage"
+                  name="message"
                   placeholder="Tell me about the opportunity..."
+                  required
                 ></textarea>
               </div>
-              <button class="btn-submit" id="submitBtn">
+              <button class="btn-submit" id="submitBtn" type="submit">
                 Send Message
                 <svg
                   width="16"
@@ -524,7 +537,7 @@
               <div class="form-success" id="formSuccess">
                 ✅ Message sent! I'll get back to you within 24 hours.
               </div>
-            </div>
+            </form>
           </div>
         </div>
       </div>
