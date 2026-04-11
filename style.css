@@ -344,9 +344,11 @@ html.dark .project-card { background: #13131e; border-color: #1e1e2e; }
 .badge-mern { background: #e3f2fd; color: #1565c0; }
 .badge-js { background: #fff8e1; color: #f57f17; }
 .badge-fi { background: #f3e5f5; color: #7b1fa2; }
+.badge-html { background: #e8f5e9; color: #2e7d32; }
 html.dark .badge-mern { background: #0d2040; color: #7aaeff; }
 html.dark .badge-js { background: #2a2000; color: #ffc107; }
 html.dark .badge-fi { background: #1e0a2e; color: #ce93d8; }
+html.dark .badge-html { background: #1e2a1e; color: #4caf50; }
 
 .project-title { font-family: var(--font-display); font-size: 1.55rem; font-weight: 700; line-height: 1.2; margin-bottom: 0.7rem; color: var(--black); }
 .project-desc { font-size: 0.88rem; line-height: 1.7; color: var(--grey); margin-bottom: 1.4rem; }
